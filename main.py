@@ -1,14 +1,19 @@
-import pytest
+import pdb
 
 X = 1
+limit = 100
 fizz = 3
 buzz = 5
-fizzbuzz = [3, 5]
+fizzbuzz = [fizz, buzz]
+output = {}
 
-def check_X_not_divisible_by_3_and_5(X, fizzbuzz):
-    for i in fizzbuzz:
-        assert not X % i == 0
-        X += 1
+while X != limit:
+    f_modulo = X % fizzbuzz[0]
+    b_modulo = X % fizzbuzz[1]
+    if f_modulo != 0 and b_modulo != 0:
+       output[X] = "NA"
+    else:
+       output[X] = "Not managed"
+    X += 1
 
-if __name__ == '__main__':
-    main()
+print output
