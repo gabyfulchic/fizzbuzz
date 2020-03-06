@@ -17,3 +17,8 @@
 ```ruby
 - one commit by action (RED | GREEN | REFACTOR)
 ```
+
+## 
+```python
+py tests.py && py main.py
+```

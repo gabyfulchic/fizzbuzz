@@ -14,6 +14,8 @@ while X != limit:
         output[X] = "fizzbuzz"
     elif f_modulo == 0:
         output[X] = "fizz"
+    elif b_modulo == 0:
+        output[X] = "buzz"
     elif f_modulo != 0 and b_modulo != 0:
        output[X] = "NA"
     X += 1
